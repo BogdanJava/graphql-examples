@@ -1,0 +1,20 @@
+schema {
+    query: EntryPoint
+}
+
+type EntryPoint {
+    employee(id: Long): Employee
+}
+
+type Employee {
+    id: Long!,
+    name: String!,
+    salary: Long!,
+    organization: Organization
+}
+
+type Organization {
+    id: Long!,
+    name: String!,
+    employees: [Employee]
+}
