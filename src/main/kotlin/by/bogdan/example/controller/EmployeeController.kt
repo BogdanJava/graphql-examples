@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController
 
 @RestController
-@RequestMapping("/api/employee")
+@RequestMapping("/api/getEmployee")
 class EmployeeController(private val employeeDao: EmployeeDao) {
 
     @GetMapping(path = ["", "/"])
