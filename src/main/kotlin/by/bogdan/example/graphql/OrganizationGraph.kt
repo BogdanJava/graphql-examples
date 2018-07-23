@@ -4,6 +4,6 @@ import by.bogdan.example.model.Employee
 import by.bogdan.example.model.Organization
 
 interface OrganizationGraph {
-    fun getOrganization(employee: Employee): Organization?
-    fun getAllOrganizations(): List<Organization>?
+    fun getOrganization(employee: Employee): Organization
+    fun getAllOrganizations(): List<Organization>
 }
